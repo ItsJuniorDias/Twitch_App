@@ -4,7 +4,6 @@
     "slug": "twitch_app",
     "version": "1.0.0",
     "orientation": "portrait",
-    // "icon": "./assets/images/icon.png",
     "scheme": "twitchapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -22,6 +21,11 @@
       "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png"
+    },
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#9047ff"
     },
     "plugins": [
       "expo-router",

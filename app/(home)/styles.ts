@@ -1,11 +1,13 @@
 import styled from "styled-components/native";
-
 import { Image } from "expo-image";
 
 export const Container = styled.View`
   flex: 1;
   background-color: #f7f7f8;
   padding-top: 64px;
+`;
+
+export const Header = styled.View`
   padding-right: 24px;
   padding-left: 24px;
 `;
@@ -19,6 +21,7 @@ export const Content = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 8px;
 `;
 
 export const ContentRight = styled.View`
@@ -41,4 +44,18 @@ export const TextCreate = styled.Text`
   font-family: "Roboto-Regular";
   font-size: 16px;
   color: #1c1c1f;
+`;
+
+export const TitleHeader = styled.Text`
+  font-family: "Roboto-Bold";
+  font-size: 32px;
+  color: #1c1c1f;
+`;
+
+export const Description = styled.Text`
+  font-family: "Roboto-Bold";
+  font-size: 18px;
+  color: #1c1c1f;
+  margin-top: 24px;
+  margin-bottom: 16px;
 `;
