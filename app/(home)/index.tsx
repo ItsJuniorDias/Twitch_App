@@ -1,5 +1,5 @@
 import { Image } from "expo-image";
-import { View, Text, Dimensions, FlatList } from "react-native";
+import { View, Dimensions, FlatList } from "react-native";
 
 import Card from "./components/card/card";
 import CardRecommend from "./components/card-recommend/card-recommend";
@@ -18,6 +18,12 @@ import recommend_1 from "../../assets/images/recommend_1.png";
 import avatar_1 from "../../assets/images/avatar_1.png";
 import recommend_2 from "../../assets/images/recommend_2.png";
 import avatar_2 from "../../assets/images/avatar_2.png";
+import recommend_3 from "../../assets/images/recommend_3.png";
+import avatar_3 from "../../assets/images/avatar_3.png";
+import recommend_4 from "../../assets/images/recommend_4.png";
+import avatar_4 from "../../assets/images/avatar_4.png";
+import recommend_5 from "../../assets/images/recommend_5.png";
+import avatar_5 from "../../assets/images/avatar_5.png";
 
 import {
   Container,
@@ -31,24 +37,7 @@ import {
   Description,
   Body,
   ContentFlatList,
-  CardBody,
-  ImageRecommend,
-  Avatar,
-  ContentAvatar,
-  RowAvatar,
-  TitleAvatar,
-  TitleAvatarDescription,
-  TagAvatar,
-  TextAvatarTag,
-  Dots,
-  ContentDots,
 } from "./styles";
-
-const windowWidth = Dimensions.get("window").width;
-const VISIBLE_ITEMS = 3;
-const ITEM_SPACING = 10;
-const ITEM_WIDTH =
-  (windowWidth - ITEM_SPACING * (VISIBLE_ITEMS - 1)) / VISIBLE_ITEMS;
 
 export default function HomeScreen() {
   const data = [
@@ -134,6 +123,36 @@ export default function HomeScreen() {
             tag_1={`Boat`}
             tag_2={`Water`}
             tag_3={`Fish`}
+          />
+
+          <CardRecommend
+            img_recommend={recommend_3}
+            img_avatar={avatar_3}
+            title={`BasUI`}
+            description={`Dark times ahead?\nWW1 repeat`}
+            tag_1={`WW1`}
+            tag_2={`History`}
+            tag_3={`Nurse`}
+          />
+
+          <CardRecommend
+            img_recommend={recommend_4}
+            img_avatar={avatar_4}
+            title={`Monstah`}
+            description={`Desert walk\nGTA X`}
+            tag_1={`Desert`}
+            tag_2={`GTA`}
+            tag_3={`Loco`}
+          />
+
+          <CardRecommend
+            img_recommend={recommend_5}
+            img_avatar={avatar_5}
+            title={`Great Samurai`}
+            description={`Samurai fights soldiers\nThe Lost Samurai`}
+            tag_1={`WW1`}
+            tag_2={`Samurai`}
+            tag_3={`Time`}
           />
         </Body>
       </Container>
