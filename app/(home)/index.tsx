@@ -1,9 +1,8 @@
 import { Image } from "expo-image";
 import { View, Text, Dimensions, FlatList } from "react-native";
 
-// import Carousel from "react-native-reanimated-carousel";
-
 import Card from "./components/card/card";
+import CardRecommend from "./components/card-recommend/card-recommend";
 
 import user_logo from "../../assets/images/user.png";
 import stream from "../../assets/images/stream.png";
@@ -15,6 +14,11 @@ import carousel_1 from "../../assets/images/card_carousel_1.png";
 import carousel_2 from "../../assets/images/card_carousel_2.png";
 import carousel_3 from "../../assets/images/card_carousel_3.png";
 
+import recommend_1 from "../../assets/images/recommend_1.png";
+import avatar_1 from "../../assets/images/avatar_1.png";
+import recommend_2 from "../../assets/images/recommend_2.png";
+import avatar_2 from "../../assets/images/avatar_2.png";
+
 import {
   Container,
   ImageCustom,
@@ -25,6 +29,19 @@ import {
   TitleHeader,
   Header,
   Description,
+  Body,
+  ContentFlatList,
+  CardBody,
+  ImageRecommend,
+  Avatar,
+  ContentAvatar,
+  RowAvatar,
+  TitleAvatar,
+  TitleAvatarDescription,
+  TagAvatar,
+  TextAvatarTag,
+  Dots,
+  ContentDots,
 } from "./styles";
 
 const windowWidth = Dimensions.get("window").width;
@@ -79,20 +96,46 @@ export default function HomeScreen() {
           <Description>Followed Categories</Description>
         </Header>
 
-        <FlatList
-          data={data}
-          renderItem={({ item }) => (
-            <View>
-              <Card
-                description={item.description}
-                title={item.title}
-                image={item.image}
-              />
-            </View>
-          )}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-        />
+        <ContentFlatList>
+          <FlatList
+            data={data}
+            renderItem={({ item }) => (
+              <View>
+                <Card
+                  description={item.description}
+                  title={item.title}
+                  image={item.image}
+                />
+              </View>
+            )}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+          />
+        </ContentFlatList>
+
+        <Body>
+          <Description>Channels Recommend for You</Description>
+
+          <CardRecommend
+            img_recommend={recommend_1}
+            img_avatar={avatar_1}
+            title={`Square Head`}
+            description={`Whoop Whoop Space\nSpace Jam`}
+            tag_1={`Space`}
+            tag_2={`Jammin'`}
+            tag_3={`Music`}
+          />
+
+          <CardRecommend
+            img_recommend={recommend_2}
+            img_avatar={avatar_2}
+            title={`Yummy Burgers`}
+            description={`I'm on a boat!\nBoat simulator`}
+            tag_1={`Boat`}
+            tag_2={`Water`}
+            tag_3={`Fish`}
+          />
+        </Body>
       </Container>
     </>
   );

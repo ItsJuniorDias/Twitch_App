@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import { Image } from "expo-image";
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
   background-color: #f7f7f8;
   padding-top: 64px;
@@ -58,4 +58,13 @@ export const Description = styled.Text`
   color: #1c1c1f;
   margin-top: 24px;
   margin-bottom: 16px;
+`;
+
+export const ContentFlatList = styled.View`
+  height: 253px;
+`;
+
+export const Body = styled.View`
+  padding-right: 24px;
+  padding-left: 24px;
 `;
