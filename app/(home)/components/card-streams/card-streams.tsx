@@ -18,8 +18,11 @@ import {
   ButtonText,
   Notification,
 } from "./styles";
+import { useRouter } from "expo-router";
 
 export default function CardStreams() {
+  const router = useRouter();
+
   return (
     <Container>
       <Row>
@@ -40,7 +43,7 @@ export default function CardStreams() {
         </Row>
       </Content>
 
-      <Button>
+      <Button onPress={() => router.push("/(splash)")}>
         <Row>
           <Notification source={notification} />
 

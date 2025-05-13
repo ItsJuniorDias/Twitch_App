@@ -48,6 +48,9 @@ import {
 } from "./styles";
 import CardStreams from "./components/card-streams/card-streams";
 
+import { useEffect } from "react";
+import { useRouter } from "expo-router";
+
 export default function HomeScreen() {
   const data = [
     {

@@ -4,11 +4,12 @@ import {
   ThemeProvider,
 } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-import { Stack } from "expo-router";
+import { Stack, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { useEffect } from "react";
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
@@ -25,11 +26,14 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
+      <StatusBar style="auto" />
+
+      <Stack initialRouteName="(splash)/index">
+        <Stack.Screen name="(splash)/index" options={{ headerShown: false }} />
         <Stack.Screen name="(home)/index" options={{ headerShown: false }} />
+
         <Stack.Screen name="+not-found" />
       </Stack>
-      <StatusBar style="auto" />
     </ThemeProvider>
   );
 }
