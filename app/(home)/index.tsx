@@ -25,6 +25,8 @@ import avatar_4 from "../../assets/images/avatar_4.png";
 import recommend_5 from "../../assets/images/recommend_5.png";
 import avatar_5 from "../../assets/images/avatar_5.png";
 
+import avatar_user from "../../assets/images/avatar_user.png";
+
 import {
   Container,
   ImageCustom,
@@ -37,7 +39,14 @@ import {
   Description,
   Body,
   ContentFlatList,
+  Footer,
+  FooterUser,
+  AvatarUser,
+  DescriptionUser,
+  TitleUser,
+  Row,
 } from "./styles";
+import CardStreams from "./components/card-streams/card-streams";
 
 export default function HomeScreen() {
   const data = [
@@ -155,6 +164,24 @@ export default function HomeScreen() {
             tag_3={`Time`}
           />
         </Body>
+
+        <Footer>
+          <Description>Upcoming Streams</Description>
+
+          <CardStreams />
+
+          <Description>Upcoming Streams</Description>
+
+          <FooterUser>
+            <AvatarUser source={avatar_user} />
+
+            <View>
+              <TitleUser>Streamergurl92</TitleUser>
+
+              <DescriptionUser>4 new videos</DescriptionUser>
+            </View>
+          </FooterUser>
+        </Footer>
       </Container>
     </>
   );
