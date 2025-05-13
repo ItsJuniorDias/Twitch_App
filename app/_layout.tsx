@@ -28,8 +28,8 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <StatusBar style="auto" />
 
-      <Stack initialRouteName="(splash)/index">
-        <Stack.Screen name="(splash)/index" options={{ headerShown: false }} />
+      <Stack>
+        <Stack.Screen name="(app)/index" options={{ headerShown: false }} />
         <Stack.Screen name="(home)/index" options={{ headerShown: false }} />
 
         <Stack.Screen name="+not-found" />
