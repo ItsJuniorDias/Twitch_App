@@ -2,6 +2,10 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+## Figma 
+
+- https://www.figma.com/design/2HjAI8IDwUKT3Brz59yjI8/Twitch-App--customizable---Community-?node-id=0-1&p=f&t=xBst6f76ZKc9nwUG-0
+
 ## Get started
 
 1. Install dependencies
