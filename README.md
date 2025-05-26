@@ -4,9 +4,11 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 ## Evidência 
 
+<img width="351" alt="Captura de Tela 2025-05-26 às 18 05 52" src="https://github.com/user-attachments/assets/80e7b483-22d3-473d-bfec-2e9957ac0edb" />
+
 <img width="350" alt="Captura de Tela 2025-05-26 às 18 05 11" src="https://github.com/user-attachments/assets/bcce3f08-9fae-4181-8da0-876d618a1557" />
 
-<img width="351" alt="Captura de Tela 2025-05-26 às 18 05 52" src="https://github.com/user-attachments/assets/80e7b483-22d3-473d-bfec-2e9957ac0edb" />
+
 
 ## Figma 
 
