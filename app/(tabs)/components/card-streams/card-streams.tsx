@@ -43,7 +43,7 @@ export default function CardStreams() {
         </Row>
       </Content>
 
-      <Button onPress={() => router.push("/(splash)")}>
+      <Button onPress={() => router.push("/(tabs)")}>
         <Row>
           <Notification source={notification} />
 

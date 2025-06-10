@@ -1,9 +1,10 @@
+import { View, Text, StyleSheet, Dimensions, FlatList } from "react-native";
 import { Image } from "expo-image";
-import { View, Dimensions, FlatList } from "react-native";
 
 import Card from "./components/card/card";
 import CardRecommend from "./components/card-recommend/card-recommend";
 import Header from "./components/header/header";
+import CardStreams from "./components/card-streams/card-streams";
 
 import carousel_1 from "../../assets/images/card_carousel_1.png";
 import carousel_2 from "../../assets/images/card_carousel_2.png";
@@ -32,14 +33,9 @@ import {
   AvatarUser,
   DescriptionUser,
   TitleUser,
-  Row,
 } from "./styles";
-import CardStreams from "./components/card-streams/card-streams";
 
-import { useEffect } from "react";
-import { useRouter } from "expo-router";
-
-export default function HomeScreen() {
+export default function Tab() {
   const data = [
     {
       title: "World of Warcraft",
@@ -155,3 +151,11 @@ export default function HomeScreen() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});

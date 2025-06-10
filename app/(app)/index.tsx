@@ -13,7 +13,7 @@ export default function SplashScreen() {
 
   useEffect(() => {
     setTimeout(() => {
-      return router.push("/(home)");
+      return router.push("/(tabs)");
     }, 2000);
   }, [router]);
 

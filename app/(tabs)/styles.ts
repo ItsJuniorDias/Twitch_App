@@ -1,6 +1,11 @@
 import styled from "styled-components/native";
 import { Image } from "expo-image";
 
+export const DiscoverImage = styled(Image)`
+  width: 28px;
+  height: 28px;
+`;
+
 export const Container = styled.ScrollView`
   flex: 1;
   background-color: #f7f7f8;
