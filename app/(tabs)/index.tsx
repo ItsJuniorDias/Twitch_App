@@ -3,7 +3,7 @@ import { Image } from "expo-image";
 
 import Card from "../(home)/components/card/card";
 import CardRecommend from "../(home)/components/card-recommend/card-recommend";
-import Header from "../(home)/components/header/header";
+import Header from "../../components/header/header";
 import CardStreams from "../(home)/components/card-streams/card-streams";
 
 import carousel_1 from "../../assets/images/card_carousel_1.png";

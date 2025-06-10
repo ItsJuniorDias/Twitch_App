@@ -1,17 +1,15 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View } from "react-native";
+
+import Header from "../../components/header/header";
+
+import { Container } from "./styles";
 
 export default function Tab() {
   return (
-    <View style={styles.container}>
-      <Text>Tab [Home|Settings]</Text>
-    </View>
+    <>
+      <Container>
+        <Header title="Discover" isVisible={false} />
+      </Container>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});

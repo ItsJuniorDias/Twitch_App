@@ -1,11 +1,11 @@
 import React from "react";
 import { View } from "react-native";
 
-import user_logo from "../../../../assets/images/user.png";
-import stream from "../../../../assets/images/stream.png";
-import comments from "../../../../assets/images/comments.png";
-import share from "../../../../assets/images/share.png";
-import create from "../../../../assets/images/create.png";
+import user_logo from "../../assets/images/user.png";
+import stream from "../../assets/images/stream.png";
+import comments from "../../assets/images/comments.png";
+import share from "../../assets/images/share.png";
+import create from "../../assets/images/create.png";
 
 import {
   HeaderComponent,
