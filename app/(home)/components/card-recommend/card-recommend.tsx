@@ -3,6 +3,8 @@ import { View } from "react-native";
 
 import dots from "../../../../assets/images/dots.png";
 
+import Tag from "../../../../components/Tag/tag";
+
 import {
   Avatar,
   CardBody,
@@ -50,17 +52,11 @@ export default function CardRecommend({
         <TitleAvatarDescription>{description}</TitleAvatarDescription>
 
         <RowAvatar>
-          <TagAvatar>
-            <TextAvatarTag>{tag_1}</TextAvatarTag>
-          </TagAvatar>
+          <Tag title={tag_1} />
 
-          <TagAvatar>
-            <TextAvatarTag>{tag_2}</TextAvatarTag>
-          </TagAvatar>
+          <Tag title={tag_2} />
 
-          <TagAvatar>
-            <TextAvatarTag>{tag_3}</TextAvatarTag>
-          </TagAvatar>
+          <Tag title={tag_3} />
         </RowAvatar>
       </ContentAvatar>
 
