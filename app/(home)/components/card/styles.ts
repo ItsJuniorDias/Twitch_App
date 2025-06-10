@@ -15,6 +15,14 @@ export const Row = styled.View`
   align-items: center;
 `;
 
+export const TitleHeader = styled.Text`
+  font-family: "Roboto-Bold";
+  font-size: 18px;
+  color: #1c1c1f;
+  margin-top: 24px;
+  margin-bottom: 16px;
+`;
+
 export const Title = styled.Text`
   font-family: "Roboto-SemiBold";
   font-size: 16px;

@@ -3,12 +3,7 @@ import { View, Dimensions, FlatList } from "react-native";
 
 import Card from "./components/card/card";
 import CardRecommend from "./components/card-recommend/card-recommend";
-
-import user_logo from "../../assets/images/user.png";
-import stream from "../../assets/images/stream.png";
-import comments from "../../assets/images/comments.png";
-import share from "../../assets/images/share.png";
-import create from "../../assets/images/create.png";
+import Header from "./components/header/header";
 
 import carousel_1 from "../../assets/images/card_carousel_1.png";
 import carousel_2 from "../../assets/images/card_carousel_2.png";
@@ -29,13 +24,6 @@ import avatar_user from "../../assets/images/avatar_user.png";
 
 import {
   Container,
-  ImageCustom,
-  Content,
-  ContentRight,
-  ButtonCreate,
-  TextCreate,
-  TitleHeader,
-  Header,
   Description,
   Body,
   ContentFlatList,
@@ -73,29 +61,7 @@ export default function HomeScreen() {
   return (
     <>
       <Container>
-        <Header>
-          <Content>
-            <ImageCustom source={user_logo} />
-
-            <ContentRight>
-              <ImageCustom source={stream} />
-
-              <ImageCustom source={comments} />
-
-              <ImageCustom source={share} />
-
-              <ButtonCreate>
-                <ImageCustom source={create} />
-
-                <TextCreate>Create</TextCreate>
-              </ButtonCreate>
-            </ContentRight>
-          </Content>
-
-          <TitleHeader>Following</TitleHeader>
-
-          <Description>Followed Categories</Description>
-        </Header>
+        <Header title="Following" isVisible />
 
         <ContentFlatList>
           <FlatList
