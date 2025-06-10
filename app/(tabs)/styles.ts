@@ -4,6 +4,7 @@ import { Image } from "expo-image";
 export const DiscoverImage = styled(Image)`
   width: 28px;
   height: 28px;
+  color: #9147ff;
 `;
 
 export const Container = styled.ScrollView`

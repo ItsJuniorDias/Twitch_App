@@ -3,6 +3,7 @@ import { Tabs } from "expo-router";
 import { Image } from "expo-image";
 
 import discover from "../../assets/images/discover.png";
+import discoverActive from "../../assets/images/discover_active.png";
 
 import { DiscoverImage } from "./styles";
 
@@ -20,10 +21,15 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="discover"
         options={{
-          title: "Settings",
-          tabBarIcon: ({ color }) => <DiscoverImage source={discover} />,
+          title: "Discover",
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <DiscoverImage source={discoverActive} />
+            ) : (
+              <DiscoverImage source={discover} />
+            ),
           headerShown: false,
         }}
       />
