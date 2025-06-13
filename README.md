@@ -2,7 +2,7 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Evidência 
+## Evidence 
 
 <img width="351" alt="Captura de Tela 2025-05-26 às 18 05 52" src="https://github.com/user-attachments/assets/80e7b483-22d3-473d-bfec-2e9957ac0edb" />
 
