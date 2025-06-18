@@ -11,11 +11,11 @@ interface CardProps {}
 export default function CardDiscover({}: CardProps) {
   const DATA = [
     {
-      id: "",
+      id: "1",
       image: cardDiscover_1,
     },
     {
-      id: "",
+      id: "2",
       image: cardDiscover_1,
     },
   ];
