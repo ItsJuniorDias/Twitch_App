@@ -13,6 +13,15 @@ export const Container = styled.ScrollView`
   padding-top: 64px;
 `;
 
+export const TitleCarousel = styled.Text`
+  font-family: "Roboto-SemiBold";
+  font-size: 18px;
+  color: #18181b;
+  padding-left: 24px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+`;
+
 export const Description = styled.Text`
   font-family: "Roboto-Bold";
   font-size: 18px;
