@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import { Image } from "expo-image";
 
-export const DiscoverImage = styled(Image)`
+export const ImageCustom = styled(Image)`
   width: 28px;
   height: 28px;
   color: #9147ff;

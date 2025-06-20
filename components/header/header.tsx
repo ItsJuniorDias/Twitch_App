@@ -20,7 +20,7 @@ import {
 
 export interface HeaderProps {
   title: string;
-  isVisible: boolean;
+  isVisible?: boolean;
 }
 
 export default function Header({ title, isVisible }: HeaderProps) {

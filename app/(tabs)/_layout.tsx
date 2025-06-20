@@ -5,7 +5,10 @@ import { Image } from "expo-image";
 import discover from "../../assets/images/discover.png";
 import discoverActive from "../../assets/images/discover_active.png";
 
-import { DiscoverImage } from "./styles";
+import icon_browse from "../../assets/images/icon_browse.png";
+import icon_browse_active from "../../assets/images/icon_browse_active.png";
+
+import { ImageCustom } from "./styles";
 
 export default function TabLayout() {
   return (
@@ -26,9 +29,22 @@ export default function TabLayout() {
           title: "Discover",
           tabBarIcon: ({ focused }) =>
             focused ? (
-              <DiscoverImage source={discoverActive} />
+              <ImageCustom source={discoverActive} />
             ) : (
-              <DiscoverImage source={discover} />
+              <ImageCustom source={discover} />
+            ),
+          headerShown: false,
+        }}
+      />
+      <Tabs.Screen
+        name="browse"
+        options={{
+          title: "Browse",
+          tabBarIcon: ({ focused }) =>
+            focused ? (
+              <ImageCustom source={icon_browse_active} />
+            ) : (
+              <ImageCustom source={icon_browse} />
             ),
           headerShown: false,
         }}
