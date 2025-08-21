@@ -1,4 +1,4 @@
-import { FlatList, View } from "react-native";
+import { FlatList, View, StyleSheet } from "react-native";
 
 import Header from "../../components/header/header";
 import Card from "../(home)/components/card/card";

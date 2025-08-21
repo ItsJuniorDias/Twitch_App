@@ -12,9 +12,12 @@ export const ImageDiscover = styled(Image)`
 `;
 
 export const Row = styled.View`
+  width: 99%;
+  /* background-color: red; */
   flex-direction: row;
   margin-bottom: 8px;
-  gap: 8px;
+  flex-wrap: wrap;
+  /* margin-top: -32px; */
 `;
 
 export const Title = styled.Text`

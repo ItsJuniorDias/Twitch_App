@@ -37,6 +37,13 @@
           "resizeMode": "contain",
           "backgroundColor": "#9047ff"
         }
+      ],
+      [
+        "expo-video",
+        {
+          "supportsBackgroundPlayback": true,
+          "supportsPictureInPicture": true
+        }
       ]
     ],
     "experiments": {
