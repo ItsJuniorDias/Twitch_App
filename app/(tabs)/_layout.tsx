@@ -27,11 +27,11 @@ export default function TabLayout() {
         name="discover"
         options={{
           title: "Discover",
-          tabBarIcon: ({ focused }) =>
+          tabBarIcon: ({ focused, color }) =>
             focused ? (
-              <ImageCustom source={discoverActive} />
+              <ImageCustom tintColor={color} source={discoverActive} />
             ) : (
-              <ImageCustom source={discover} />
+              <ImageCustom tintColor={color} source={discover} />
             ),
           headerShown: false,
         }}
@@ -40,11 +40,11 @@ export default function TabLayout() {
         name="browse"
         options={{
           title: "Browse",
-          tabBarIcon: ({ focused }) =>
+          tabBarIcon: ({ focused, color }) =>
             focused ? (
-              <ImageCustom source={icon_browse_active} />
+              <ImageCustom tintColor={color} source={icon_browse_active} />
             ) : (
-              <ImageCustom source={icon_browse} />
+              <ImageCustom tintColor={color} source={icon_browse} />
             ),
           headerShown: false,
         }}
